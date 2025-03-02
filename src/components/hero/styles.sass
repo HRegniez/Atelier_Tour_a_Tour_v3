@@ -1,0 +1,150 @@
+@import '../../variables'
+
+.hero
+    height: 110svh
+    width: 100%
+    position: relative
+    z-index: -1
+    background-color: black
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
+    img
+        z-index: -4
+        min-width: 100%
+        position: fixed
+        min-height: 115%
+    h3
+        text-transform: uppercase
+        padding-bottom: 0.5rem
+    &_background
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: -3
+        background: radial-gradient(circle, rgba(238,174,202,0) 0%, rgba(0,0,0,0.6860986547085202) 100%)
+    &_gradient
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 101%
+        background: linear-gradient(0deg, rgba(214,204,194,1) 7%, rgba(34,193,195,0) 15%)
+    &_intro
+        padding: 1rem
+        color: white
+        font-weight: 700
+        margin-left: 2rem
+        h1
+            margin-top: 2rem
+            font-size: 3rem
+            font-family: $font-02
+            text-transform: capitalize
+            span
+                text-transform: lowercase
+        h2
+            font-size: 1rem
+            text-transform: uppercase
+    section
+        width: 30%
+        color: white
+        padding: 1rem
+        font-family: $font-02
+        line-height: 1.3
+        font-weight: 600
+    aside
+        width: 30%
+        color: white
+        padding: 1rem
+        font-family: $font-02
+        line-height: 1.3
+        font-weight: 600
+    &_details
+        display: flex
+        justify-content: space-between
+        margin: 4rem 2rem 8rem
+
+@media screen and (max-width: 850px) 
+    .hero
+
+        &_intro
+            h1
+                font-size: 2.5rem
+        section
+            width: 40%
+        aside
+            width: 40%
+        &_details
+            margin: 2rem 2rem 6rem
+@media screen and (max-width: 600px) 
+    .hero
+        &_intro
+            h1
+                font-size: 2rem
+            h2
+                font-size: 0.8rem
+                margin: 1rem 0
+                width: 70%
+        section
+            font-size: 14px
+        aside
+            font-size: 14px
+@media screen and (max-width: 500px) 
+    .hero
+        
+        &_intro
+            margin-left: 0.5rem
+            h1
+                font-size: 1.5rem
+            
+        section
+            width: 100%
+        aside
+            width: 100%
+        &_details
+            flex-direction: column
+            margin: 0 0.5rem 5rem
+@media screen and (max-width: 376px) 
+    .hero
+        &_intro
+            margin-left: 0.5rem
+            h1
+                font-size: 1.3rem
+@media screen and (min-width: 1200px)
+    .hero
+        &_intro
+            h1
+                font-size: 4rem
+            h2
+                font-size: 1.5rem
+                margin: 2rem 0
+        section, aside
+            font-size: 1.2rem
+        &_details
+            margin: 4rem 2rem 10rem
+@media screen and (min-width: 1200px) and (max-width: 1400px)
+    .hero
+        &_intro
+            h1
+                font-size: 3.2rem
+            h2
+                font-size: 1.2rem
+                margin: 1.5rem 0
+        section, aside
+            font-size: 1.1rem
+
+
+
+
+                
+                
+
+
+
+
+
+
+    

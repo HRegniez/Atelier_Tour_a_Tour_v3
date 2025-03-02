@@ -1,0 +1,132 @@
+[
+    {
+        "id": "Couteaux",
+        "prices":
+        [
+            {
+                "name": "Couteaux de poche",
+                "price": "4,00 €"
+            },
+            {
+                "name": "Lame jusqu’à 10cm",
+                "price": "3,30 €"
+            },
+            {
+                "name": "Lame jusqu’à 15cm",
+                "price": "3,90 €"
+            },
+            {
+                "name": "Lame jusqu’à 20cm",
+                "price": "4,50 €"
+            },
+            {
+                "name": "Lame jusqu’à 30cm",
+                "price": "6,00 €"
+            },
+            {
+                "name": "Lame plus de 30cm",
+                "price": "8,00 €"
+            },
+            {
+                "name": "Couteau à grosse dents au cm",
+                "price": "0,40 €"
+            },
+            {
+                "name": "Feuille (hachoir)",
+                "price": "8,50 €"
+            },
+            {
+              "name": "Rattrapage pointe couteau",
+              "price": "3,30 €"
+            }
+        ]
+    },
+    {
+        "id": "Travail de bois",
+        "prices":
+        [
+            {
+                "name": "Ciseaux à bois",
+                "price": "6,00 - 15,00 €"
+              },
+              {
+                "name": "Gouge",
+                "price": "8,00 €"
+              },
+              {
+                "name": "Fer de raboteuse dégauchisseuse jusqu’a 20cm",
+                "price": "8,00 €"
+              },
+              {
+                "name": "Serpette",
+                "price": "8,00 €"
+              },
+              {
+                "name": "Hache",
+                "price": "10,00 €"
+              },
+              {
+                "name": "Lame scie circulaire",
+                "price": "0,40 €/dent"
+              }
+        ]
+    },
+    {
+        "id": "Jardinage",
+        "prices":
+        [
+            {
+              "name": "Sécateur (démontage, nettoyage)",
+              "price": "8,00 €"
+            },
+            {
+              "name": "Cisaille (démontage, nettoyage)",
+              "price": "10,00 €"
+            },
+            {
+              "name": "Taille haie manuel",
+              "price": "12,00 €"
+            },
+            {
+              "name": "Lame de taille haie (démonté)",
+              "price": "20,00 €"
+            },
+            {
+              "name": "Lame de tondeuse (démonté/équilibré)",
+              "price": "15,00 €"
+            },
+            {
+              "name": "Chaîne de tronçonneuse (démonté)",
+              "price": "8,00 €"
+            }
+        ]
+    },
+    {
+        "id": "Ciseaux",
+        "prices":
+        [
+            {
+              "name": "Ciseau ordinaire jusqu’a 10cm",
+              "price": "5,50 €"
+            },
+            {
+              "name": "Ciseau ordinaire plus de 10cm",
+              "price": "7,50 €"
+            },
+            {
+              "name": "Ciseau de couture",
+              "price": "9,00 €"
+            },
+            {
+              "name": "Ciseau de coiffure/toilettage",
+              "price": "20,00 €"
+            },
+            {
+              "name": "Ciseau japonnais de coiffure/toilettage",
+              "price": "30,00 €"
+            }
+        ]
+    }
+    
+    
+]

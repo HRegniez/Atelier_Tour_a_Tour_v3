@@ -1,0 +1,107 @@
+@import '../../variables'
+
+.market-form
+  display: flex
+  flex-direction: column
+  gap: 2rem
+  padding: 2rem
+  background-color: $color-sec_01
+  border-radius: 1rem
+  @include shade-in
+
+  &__item
+    display: flex
+    gap: 1rem
+    padding: 1.5rem
+    background-color: white
+    border-radius: 0.5rem
+    @include shade-out
+
+  &__controls
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+
+    button
+      padding: 0.75rem
+      border: none
+      background-color: $color-sec_02
+      border-radius: 0.5rem
+      cursor: pointer
+      transition: all 0.3s ease
+      @include shade-out
+
+      &:hover:not(:disabled)
+        background-color: $color-prim_01
+        color: white
+        transform: translateY(-2px)
+        @include shade-out_2
+
+      &:disabled
+        opacity: 0.5
+        cursor: not-allowed
+
+  &__fields
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    gap: 1rem
+
+    div
+      display: flex
+      flex-direction: column
+      gap: 0.5rem
+
+    label
+      font-family: $font-01
+      font-weight: 600
+      color: $color-sec_dark_01
+
+    input
+      padding: 0.75rem
+      border: 2px solid $color-sec_dark_01
+      border-radius: 0.5rem
+      font-size: 1rem
+      font-family: $font-01
+      
+      &:focus
+        outline: none
+        border-color: $color-prim_01
+
+  &__actions
+    display: flex
+    gap: 1rem
+    justify-content: flex-end
+    margin-top: 1rem
+
+    button
+      padding: 0.75rem 1.5rem
+      border: none
+      border-radius: 0.5rem
+      background-color: $color-prim_01
+      color: white
+      cursor: pointer
+      transition: all 0.3s ease
+      font-family: $font-01
+      font-weight: 600
+      @include shade-out
+
+      &:hover
+        background-color: darken($color-prim_01, 10%)
+        transform: translateY(-2px)
+        @include shade-out_2
+
+      &:first-child
+        background-color: $color-sec_02
+        color: black
+
+        &:hover
+          background-color: $color-sec_dark_01
+          color: white
+
+@media screen and (max-width: 768px)
+  .market-form
+    padding: 1rem
+
+    &__item
+      flex-direction: column 

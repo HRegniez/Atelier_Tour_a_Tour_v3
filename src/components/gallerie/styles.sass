@@ -1,0 +1,127 @@
+@import '../../variables'
+
+.gallerie
+    position: relative
+    padding: 2rem
+    &-z 
+        z-index: 5
+    &_contain
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 1rem
+        &_img
+            height: 260px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden
+            border-radius: 0.5rem
+            transition: transform 0.3s ease
+            @include shade-out
+            
+            &:hover
+                transform: translateY(-5px)
+                @include shade-out_2
+                
+                .lazy-image-container
+                    transform: scale(1.1)
+            
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        
+    &_gradient
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: -1
+        background: linear-gradient(0deg, rgba(171,163,155,0) 0%, rgba(214,204,194,1) 90%)
+    
+    &_load-more
+        display: block
+        margin: 2rem auto
+        padding: 0.8rem 2rem
+        background-color: $color-sec_dark_01
+        border: none
+        border-radius: 0.5rem
+        font-size: 1rem
+        cursor: pointer
+        color: white
+        font-family: $font-02
+        transition: all 0.3s ease
+        @include shade-out
+        
+        &:hover
+            background-color: darken($color-sec_dark_01, 10%)
+            transform: translateY(-2px)
+            @include shade-out_2
+
+    
+@media screen and (max-width: 768px) 
+    .gallerie
+        &_contain
+            grid-template-columns: repeat(2, 1fr)
+@media screen and (max-width: 450px) 
+    .gallerie
+        &_contain
+            grid-template-columns: repeat(1, 1fr)
+@media screen and (max-width: 375px) 
+    .gallerie
+        padding: 2rem 0
+        h2
+            margin-left: 1rem
+
+.lazy-image-container
+    position: relative
+    width: 100%
+    height: 100%
+    overflow: hidden
+    transition: transform 0.3s ease
+
+    .lazy-image-thumbnail
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        filter: blur(10px)
+        transform: scale(1.1)
+        transition: opacity 0.3s ease
+        opacity: 1
+
+        &.loaded
+            opacity: 0
+
+    .lazy-image-full
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        opacity: 0
+        transition: opacity 0.3s ease
+
+        &.loaded
+            opacity: 1
+
+.gallerie_modal
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, 0.8)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1000
+
+    img
+        max-height: 90vh
+        max-width: 90vw
+        object-fit: contain
+
+.gallerie_contain_img
+    cursor: pointer

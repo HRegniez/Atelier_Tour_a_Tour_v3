@@ -1,0 +1,112 @@
+@import "../../variables"
+
+.meTrouver
+    background-color: $color-sec_01
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100svw
+    h2
+        padding-top: 5rem
+    &_contain
+        display: flex
+        width: 100%
+        article
+            background-color: $color-sec_dark_01
+            width: 45%
+            padding: 0 1rem 1rem
+            border-radius: 1rem
+            margin: 2rem
+            @include shade-in
+            h3
+                background-color: $color-sec_01
+                display: inline-block
+                padding: 0.5rem 1rem
+                margin: 1rem 0 0
+                border-radius: 0.5rem
+                @include shade-out
+                font-size: 1.2rem
+            li
+                margin-top: 1rem
+                background-color: $color-sec_01
+                padding: 0.7rem 1rem
+                border-radius: 0.5rem
+                @include shade-out_2     
+        aside
+            width: 40%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            h3
+                font-size: 1.2rem
+                margin-bottom: 1rem
+            
+    &_details  
+        display: flex
+        align-items: center
+        gap: 0.5rem
+        color: $color-prim_01
+        font-size: 1.2rem
+        text-decoration: none
+        transition: all 0.2s ease
+        h4
+            color: black
+            font-size: 1rem
+            transition: all 0.2s ease
+        &:hover
+            color: $color-sec_dark_01
+            transition: all 0.2s ease
+            h4
+                color: $color-sec_dark_01
+                transition: all 0.3s ease
+    &_flex
+        display: flex
+        justify-content: space-between
+    &_dates
+        margin-top: 1rem
+    &_nextDates
+        margin-top: 1rem
+            
+@media screen and (max-width: 951px)
+     .meTrouver
+        position: relative
+        padding-bottom: 2rem
+        &_contain
+            flex-direction: column
+            align-items: center
+            article
+                width: 70%
+            aside
+                width: 35%
+                margin-right: auto
+                margin-left: 4rem
+        &_contact
+            position: absolute
+            bottom: 0rem
+            right: 4rem
+@media screen and (max-width: 846px)
+     .meTrouver
+        &_contain
+            aside
+                width: 70%
+                margin: auto
+                margin-bottom: 2rem
+        &_contact
+            position: relative
+            right: 0
+            margin: auto
+@media screen and (max-width: 600px)
+    .meTrouver
+            
+        &_contain
+            article
+                width: 100%
+                border-radius: 0 
+                h3
+                    margin-left: 0.5rem
+                ul
+                    margin-left: 0.5rem
+                    margin-right: 0.5rem
+        &_details
+            h4
+                text-align: end

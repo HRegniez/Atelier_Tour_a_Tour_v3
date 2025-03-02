@@ -1,0 +1,103 @@
+@import '../../variables'
+.header
+    width: 100svw
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $color-prim_01
+    position: fixed
+    z-index: 5
+    .burger
+        display: none
+    &_logo
+        width: 10rem
+        margin-bottom: 0.5rem
+        &_img
+            width: 100%
+            background-color: $color-sec_01
+    &_nav
+        display: flex
+        padding-bottom: 1rem
+
+        li
+            list-style-type: none
+            width: 12rem
+            height: 2rem
+            display: flex
+        a
+            color: black
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: 600
+            font-size: 1rem
+            font-family: $font-01
+            background-color: $color-prim_01
+            width: 100%
+            display: inline-block
+            height: 100%
+            text-align: center
+            padding-top: 1rem
+            transition: all 0.5s ease-in
+            &:hover
+                background-color: $color-sec_dark_01
+                transition: all 0.2s ease-out
+            
+        
+@media screen and (max-width: 950px) 
+    .header
+        &_nav
+            li
+                width: 10rem
+                
+@media screen and (max-width: 750px) 
+    .header
+        flex-direction: row
+        &_nav
+            margin-top: 0 
+            position: absolute
+            height: 100svh
+            background-color: $color-prim_01
+            top: 0 
+            right: 0 
+            left: 0 
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            transform: translateX(-100%)
+            transition: all 0.15s ease-in
+        .show
+            transform: translateX(0%)
+            transition: all 0.4s ease-out
+            
+        .burger
+            display: block
+            padding: 1rem
+            position: fixed
+            top: 3rem
+            right: 2rem
+            background-color: $color-prim_01
+            border-radius: 0.5rem
+            z-index: 2
+            &_line
+                width: 2.7rem
+                height: 0.3rem
+                background-color: $color-sec_01
+                margin: 0.4rem 0 
+                border-radius: 0.2rem
+                transition: all 0.4s ease-in
+        .active
+            .line_1
+                background-color: white
+                transform: rotate(-45deg) translate(-5px, 10px)
+                transition: all 0.3s ease-in
+            .line_2
+                opacity: 0
+                transition: all 0.4s ease-in
+            .line_3
+                background-color: white
+                transform: rotate(45deg) translate(-5px, -10px)
+                transition: all 0.3s ease-in
+                
+                
+
+            

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "adresse": "Marché d'Arès",
+        "dates": "Mardi matin",
+        "nextDates": "le 14/28 janvier - fevrier: absent",
+        "mapsLink": "https://maps.app.goo.gl/CtZ5k5X8rJVDdWhE7"
+    },
+    {
+        "id": "2",
+        "adresse": "Marché de Lacanau-océan",
+        "dates": "Mercredi matin",
+        "nextDates": "le 8 janvier - 5 février",
+        "mapsLink": "https://maps.app.goo.gl/59zSHTgkFomV2dKi8"
+    },
+    {
+        "id": "3",
+        "adresse": "Marché de Le Porge",
+        "dates": "Jeudi matin",
+        "nextDates": "le 16/30 janvier - 13 février",
+        "mapsLink": "https://maps.app.goo.gl/fLT6xb3Fyfik7gNx8"
+    },
+    {
+        "id": "4",
+        "adresse": "Marché du Haillan",
+        "dates": "Vendredi après-midi",
+        "nextDates": "le 17 janvier",
+        "mapsLink": "https://maps.app.goo.gl/YyS4JZTaBCcq6evE8"
+    },
+    {
+        "id": "5",
+        "adresse": "Marché de Bègles",
+        "dates": "Samedi matin",
+        "nextDates": "le 11/25 janvier - 8 février",
+        "mapsLink": "https://maps.app.goo.gl/nPzGsR86wm7MgTFX9"
+    },
+    {
+        "id": "6",
+        "adresse": "Marché de Martignas-sur-jalles",
+        "dates": "Dimanche matin",
+        "nextDates": "le 19 janvier - 2/16 février",
+        "mapsLink": "https://maps.app.goo.gl/AT5cbjhiPkLdT5566"
+    }
+]
